@@ -1,0 +1,15 @@
+<div  class="search__page__items">
+  <div class="search__page__item" *ngFor="let result of results.items">
+    <div class="search__page__header">
+      <a [href]="result.formattedUrl">
+        <div>
+          <cite>{{result.displayLink}}</cite>
+        </div>
+        <h3 class="search__page__header-title">{{result.title}}</h3>
+      </a>
+    </div>
+    <div class="search__page__content">
+      <span [innerHTML]="result.htmlSnippet"></span>
+    </div>
+  </div>
+</div>

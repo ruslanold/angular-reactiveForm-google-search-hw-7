@@ -1,0 +1,7 @@
+.search__advanced {
+  margin-top: 10px;
+  font: 16px arial,sans-serif;
+}
+.search__advanced form label {
+  margin: 0 5px;
+}

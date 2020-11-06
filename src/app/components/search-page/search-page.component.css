@@ -1,0 +1,39 @@
+.search__page__items {
+  font: 16px arial,sans-serif;
+  font-weight: normal;
+  margin: 30px 0px 0px 20px;
+}
+.search__page__item {
+  line-height: 1.2;
+  text-align: left;
+  width: 650px;
+  text-overflow: ellipsis;
+  overflow: hidden; 
+  margin-top: 0;
+  margin-bottom: 28px;
+}
+cite {
+  font-size: 14px;
+  padding-top: 1px;
+  line-height: 1.3;
+  color: #202124;
+  font-style: normal;
+  text-decoration: none;
+}
+.search__page__header-title {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.3;
+  padding-top: 4px;
+  display: inline-block;
+  line-height: 1.3;
+  margin-bottom: 3px;
+  color: #1a0dab;
+  font-weight: normal;
+}
+.search__page__content {
+  line-height: 1.58;
+  word-wrap: break-word;
+  max-width: 48em;
+  color: #4d5156;
+}

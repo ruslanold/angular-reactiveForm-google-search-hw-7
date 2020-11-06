@@ -1,0 +1,23 @@
+<div class="search">
+  <form 
+    [formGroup]="form" 
+    (keyup)="getResultGoogle($event, form)"
+    >
+    <img src="assets/iconSearch.png" />
+    <input 
+      formControlName="query"
+      (focus)="handlerFocus($event)"
+      (blur)="handlerBlur($event)"
+    />
+  </form>
+  <div class="suggestion" *ngIf="results &&  results[1] && results[1].length">
+    <ul class="items">
+      <li class="item" *ngFor="let result of results[1]" (click)="handlerClick(result)" >
+        <div class="item__inner"  >
+          <img src="assets/iconSearch.png" />
+          <span class="result"  [innerHTML]="result|search:query" ></span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

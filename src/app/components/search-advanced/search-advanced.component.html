@@ -1,0 +1,16 @@
+<div class="search__advanced">
+  <form [formGroup]="advancedSearch" (ngSubmit)="action()">
+    <label for="query">Запит</label>
+    <input name="query" [formControl]="query" />
+    <label for="language">Мова</label>
+    <select name="language" [formControl]="language" [(ngModel)]="defaultLanguage">
+      <option *ngFor="let state of statesLanguage" [ngValue]="state.name">{{state.name}}</option>
+    </select>
+    <label for="dateRestrict">За останнi {{advancedSearch.controls.dateRestrict.value 
+      ? statesDateRestrict[advancedSearch.controls.dateRestrict.value]
+      : defaultDateRestrict}} днiв</label>
+    <input name="dateRestrict" type="range" value="0" min="0" max="3" step="1" [formControl]="dateRestrict" />
+
+    <button>Пошук</button>
+  </form>
+</div>

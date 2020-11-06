@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angularHw7"
+    }
+  },
+  "defaultProject": "angularHw7",
+  "cli": {
+    "analytics": false
+  }
 }

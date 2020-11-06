@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  font-family: arial,sans-serif;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header__inner {
+  display: flex;
+}
