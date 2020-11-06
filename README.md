@@ -1,3 +1,3 @@
 # AngularHw7
 
-https://gifyu.com/image/RAGy
+[![Demo CountPages alpha](https://j.gifs.com/yoYOlE.gif)]
